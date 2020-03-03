@@ -39,7 +39,7 @@ một số mẹo với js:
             // code 
         }
 
-    gán giá trị cho biến số khi không xác định (undefined, null, "")
+    + gán giá trị cho biến số khi không xác định (undefined, null, "")
 
         if (a === undefined || a === null || a === "") {
             a = "defaul value"
@@ -53,13 +53,13 @@ một số mẹo với js:
 
         if (!a) a = "default value"
 
-    tham chiếu thuộc tính chưa được xác định trước của đối tượng:
+    + tham chiếu thuộc tính chưa được xác định trước của đối tượng:
         
         a = "ten thuoc tinh"
 
         object[a] 
 
-    Destructuring aliases - sử dụng để tạo một biến tham chiếu thuộc tính object một cách nhanh hơn:
+    + Destructuring aliases - sử dụng để tạo một biến tham chiếu thuộc tính object một cách nhanh hơn:
         
         let foo = object.foo;
 
@@ -67,13 +67,13 @@ một số mẹo với js:
 
         let {foo} = object;
 
-    Kiếm tra nhanh giá trị có trong mảng hay không:
+    + Kiếm tra nhanh giá trị có trong mảng hay không:
         
         let arr = [1, 2, 3]
         
         arr.includes(2) // return true or false
 
-    tạo và thực thi function nhanh chóng:
+    + tạo và thực thi function nhanh chóng:
         
         function foo (param) {
             // something
@@ -87,14 +87,14 @@ một số mẹo với js:
             // something
         })(param)
 
-    hoán đổi giá trị của hai biến:
+    + hoán đổi giá trị của hai biến:
         
         let a = "thing"
         let b = "otherThing"
 
         [a,b]=[b,a]
 
-    tự động truyền parameter
+    + tự động truyền parameter
 
         function parseString(number) {
             return str.toString() // nhận vào số và trả về chuỗi
